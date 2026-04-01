@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Digi Adhyapak | Premier GATE Aerospace Engineering Preparation</title>
+    <meta name="description" content="Prepare for GATE Aerospace Engineering with Digi Adhyapak. Master Fluid Mechanics, Aerodynamics, and more with expert guidance from Dr. P. Lovaraju (Ph.D., IIT Kanpur).">
+    <meta name="keywords" content="GATE Aerospace, GATE AE preparation, Aerospace Engineering, Dr P Lovaraju, IIT Kanpur, Digi Adhyapak, online learning, Fluid Mechanics, Aerodynamics, EdTech">
+    <meta name="author" content="Digi Adhyapak">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Digi Adhyapak | Crack GATE Aerospace Engineering">
+    <meta property="og:description" content="Join India's premier digital learning platform for GATE Aerospace Engineering. Learn directly from top experts and researchers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.digiadhyapak.com">
+    <meta property="og:image" content="https://res.cloudinary.com/dzuxwvamy/image/upload/v1775021492/logo_ref_1_orneg2.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f3c5b',  // Matched from your logo
+                            light: '#1e5f8c',
+                            accent: '#f59e0b', // Amber for highlights
+                            bg: '#f8fafc'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Animations & Styles */
+        .hero-bg {
+            background: linear-gradient(rgba(15, 60, 91, 0.85), rgba(15, 60, 91, 0.95)), url('https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+        
+        .modal-enter {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        .modal-enter-active {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 300ms, transform 300ms;
+        }
+        .modal-leave {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .modal-leave-active {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: opacity 300ms, transform 300ms;
+        }
+        
+        /* Hide scrollbar when modal is open */
+        body.modal-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg font-sans text-gray-800 antialiased selection:bg-brand-light selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40 w-full transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img class="h-16 w-auto object-contain" src="https://res.cloudinary.com/dzuxwvamy/image/upload/v1775021492/logo_ref_1_orneg2.png" alt="Digi Adhyapak Logo" onerror="this.onerror=null; this.outerHTML='<span class=\'text-2xl font-bold text-brand-dark\'>DIGI <span class=\'text-brand-light\'>ADHYAPAK</span></span>';">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-brand-dark font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand-dark font-medium transition-colors">About</a>
+                    <a href="#courses" class="text-gray-600 hover:text-brand-dark font-medium transition-colors">GATE Aerospace</a>
+                    <a href="#faculty" class="text-gray-600 hover:text-brand-dark font-medium transition-colors">Faculty</a>
+                    <button class="bg-brand-dark hover:bg-brand-light text-white px-6 py-2.5 rounded-full font-semibold transition-colors shadow-lg shadow-brand-dark/30">
+                        Enroll Now
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-brand-dark focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg relative pt-24 pb-32 flex items-center min-h-[85vh]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="md:w-3/5 text-white">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-accent/20 text-brand-accent border border-brand-accent/30 text-sm font-semibold tracking-wider mb-6">
+                    NEW LAUNCH FOR 2026
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Master <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-300">GATE Aerospace</span><br>
+                    With India's Best Minds.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0 font-light">
+                    Digi Adhyapak brings you an unparalleled learning experience. Deep dive into Aerodynamics, Fluid Mechanics, and Flight Dynamics with highly acclaimed academicians and researchers.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="bg-brand-accent hover:bg-yellow-500 text-brand-dark px-8 py-3.5 rounded-full text-lg font-bold transition-all transform hover:-translate-y-1 shadow-xl flex items-center justify-center">
+                        Start Preparing Today <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <button class="bg-transparent border-2 border-white/50 hover:border-white text-white px-8 py-3.5 rounded-full text-lg font-semibold transition-all flex items-center justify-center hover:bg-white/10">
+                        <i class="fas fa-download mr-2"></i> Download Syllabus
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Graphic/Stats -->
+            <div class="md:w-2/5 mt-10 md:mt-0 w-full">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-2xl">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-4 bg-white/5 rounded-xl border border-white/10">
+                            <h3 class="text-3xl font-bold text-brand-accent mb-1">500+</h3>
+                            <p class="text-sm text-gray-300">Hours of Video Lectures</p>
+                        </div>
+                        <div class="text-center p-4 bg-white/5 rounded-xl border border-white/10">
+                            <h3 class="text-3xl font-bold text-brand-accent mb-1">100%</h3>
+                            <p class="text-sm text-gray-300">Syllabus Coverage</p>
+                        </div>
+                        <div class="text-center p-4 bg-white/5 rounded-xl border border-white/10">
+                            <h3 class="text-3xl font-bold text-brand-accent mb-1">50+</h3>
+                            <p class="text-sm text-gray-300">Mock Tests</p>
+                        </div>
+                        <div class="text-center p-4 bg-white/5 rounded-xl border border-white/10">
+                            <h3 class="text-3xl font-bold text-brand-accent mb-1">24/7</h3>
+                            <p class="text-sm text-gray-300">Doubt Resolution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Bottom Wave Divider -->
+        <div class="absolute bottom-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,123.15,198.81,116.5,242.74,112.21,283.48,82.7,321.39,56.44Z" fill="#f8fafc"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Faculty Spotlight Section -->
+    <section id="faculty" class="py-20 bg-brand-bg relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-sm font-bold tracking-widest text-brand-light uppercase mb-2">Learn from the Best</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Meet Your Chief Mentor</h3>
+                <div class="w-20 h-1 bg-brand-accent mx-auto rounded"></div>
+                <p class="mt-6 text-gray-600 text-lg">
+                    At Digi Adhyapak, we believe that the quality of your education is determined by the quality of your educators. We are proud to have distinguished academicians leading our GATE Aerospace program.
+                </p>
+            </div>
+
+            <!-- Faculty Card -->
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 transform transition duration-500 hover:shadow-2xl">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Image Side -->
+                    <div class="md:w-2/5 bg-gray-50 p-8 flex flex-col items-center justify-center relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-brand-dark opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        <img 
+                            src="https://lbrce.ac.in/faculty/assets/images/profiles/ase/T423_Lovaraju.png" 
+                            alt="Dr. P. Lovaraju" 
+                            class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-white shadow-lg z-10"
+                            onerror="this.src='https://via.placeholder.com/300?text=Dr.+P.+Lovaraju'"
+                        >
+                        <div class="mt-6 text-center z-10">
+                            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-50 text-brand-light border border-blue-100">
+                                <i class="fas fa-check-circle"></i> Verified Educator
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Side -->
+                    <div class="md:w-3/5 p-8 md:p-10 flex flex-col justify-center">
+                        <h4 class="text-2xl md:text-3xl font-bold text-gray-900 mb-1">Dr. P. Lovaraju</h4>
+                        <p class="text-brand-light font-semibold mb-4">Ph.D. Aerospace Engineering, IIT Kanpur</p>
+                        
+                        <p class="text-gray-600 mb-6 line-clamp-3">
+                            With over 12 years of teaching and 6 years of deep research experience, Dr. Lovaraju brings unparalleled expertise to Fluid Mechanics, Thermodynamics, Gas Dynamics, and Aerodynamics.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="flex items-center text-sm text-gray-700">
+                                <i class="fas fa-university text-brand-accent w-6"></i> IIT Kanpur Alumnus
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700">
+                                <i class="fas fa-chalkboard-teacher text-brand-accent w-6"></i> 12+ Yrs Teaching
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700">
+                                <i class="fas fa-book-open text-brand-accent w-6"></i> 12+ Publications
+                            </div>
+                            <div class="flex items-center text-sm text-gray-700">
+                                <i class="fas fa-plane text-brand-accent w-6"></i> Aerodynamics Expert
+                            </div>
+                        </div>
+
+                        <!-- Button to open profile -->
+                        <button onclick="openModal()" class="w-full sm:w-auto text-center bg-brand-dark hover:bg-brand-light text-white px-8 py-3 rounded-xl font-medium transition-colors duration-300 flex justify-center items-center group">
+                            View Full Profile 
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Features -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center mb-6 transform -rotate-3">
+                        <i class="fas fa-laptop-code text-3xl text-brand-light transform rotate-3"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Structured Curriculum</h3>
+                    <p class="text-gray-600">A rigorously designed course structure ensuring complete coverage of the GATE Aerospace syllabus from basics to advanced topics.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-amber-50 rounded-2xl flex items-center justify-center mb-6 transform -rotate-3">
+                        <i class="fas fa-chart-line text-3xl text-brand-accent transform rotate-3"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Performance Analytics</h3>
+                    <p class="text-gray-600">Detailed insights into your test performances to identify weak areas and track your improvement over time.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center mb-6 transform -rotate-3">
+                        <i class="fas fa-users text-3xl text-brand-light transform rotate-3"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Interactive Doubt Solving</h3>
+                    <p class="text-gray-600">Dedicated sessions and forums to get your queries resolved directly by our expert faculty members.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-brand-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <img class="h-12 w-auto bg-white p-2 rounded mb-6" src="https://res.cloudinary.com/dzuxwvamy/image/upload/v1775021492/logo_ref_1_orneg2.png" alt="Digi Adhyapak">
+                    <p class="text-gray-400 max-w-sm mb-6">
+                        Empowering engineering students to achieve their dreams with top-tier education and expert guidance for GATE and competitive exams.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-accent hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-accent hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-accent hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-accent hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="javascript:void(0)" onclick="openQuickLink('about')" class="hover:text-brand-accent transition-colors">About Us</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuickLink('aerospace')" class="hover:text-brand-accent transition-colors">GATE Aerospace</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuickLink('faculty')" class="hover:text-brand-accent transition-colors">Our Faculty</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuickLink('tests')" class="hover:text-brand-accent transition-colors">Test Series</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start"><i class="fas fa-envelope mt-1 mr-3 text-brand-accent"></i> support@digiadhyapak.com</li>
+                        <li class="flex items-start"><i class="fas fa-phone mt-1 mr-3 text-brand-accent"></i> +91 98765 43210</li>
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-brand-accent"></i> Hyderabad, India</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                    <p class="text-gray-500 text-sm">© 2026 Digi Adhyapak. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-500">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+                
+                <div class="text-center border-t border-gray-800/50 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        Portal Designed & Developed by <a href="https://xetasolutions.in" class="text-brand-accent hover:text-white font-semibold transition-colors">Xeta Tech Solutions</a>
+                    </p>
+                    <p class="text-gray-500 text-xs mt-1.5 italic tracking-wide">
+                        A Prestigious project by Xeta Tech Solutions
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick Links Modal -->
+    <div id="quickLinkModal" class="fixed inset-0 z-50 hidden" aria-labelledby="ql-modal-title" role="dialog" aria-modal="true">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity backdrop-blur-sm" onclick="closeQuickLinkModal()"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+                <!-- Modal Panel -->
+                <div id="qlModalPanel" class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg modal-enter">
+                    
+                    <button onclick="closeQuickLinkModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100/20 hover:bg-gray-200/40 flex items-center justify-center text-white transition-colors z-10 focus:outline-none">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+
+                    <div class="bg-brand-dark px-6 py-5 border-b border-brand-light">
+                        <h3 class="text-xl md:text-2xl font-bold text-white flex items-center gap-3" id="ql-modal-title">Title</h3>
+                    </div>
+                    
+                    <div class="px-6 py-8" id="ql-modal-content">
+                        <!-- Dynamic Content goes here -->
+                    </div>
+                    
+                    <div class="bg-gray-50 px-6 py-4 flex justify-end border-t border-gray-100">
+                        <button type="button" class="rounded-xl bg-brand-dark px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-light transition-colors" onclick="closeQuickLinkModal()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="fixed inset-0 z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity backdrop-blur-sm" onclick="closeModal()"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <!-- Modal Panel -->
+                <div id="modalPanel" class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-2xl modal-enter">
+                    
+                    <!-- Close Button -->
+                    <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors z-10 focus:outline-none">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+
+                    <!-- Modal Header/Banner -->
+                    <div class="h-32 bg-brand-dark relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+                    </div>
+
+                    <div class="px-6 pb-8 pt-0 sm:px-10 sm:pb-10 relative">
+                        <!-- Profile Image Overlay -->
+                        <div class="-mt-16 mb-6 flex justify-center sm:justify-start">
+                            <div class="relative rounded-full p-1 bg-white shadow-xl">
+                                <img src="https://lbrce.ac.in/faculty/assets/images/profiles/ase/T423_Lovaraju.png" alt="Dr. P. Lovaraju" class="h-32 w-32 rounded-full object-cover border-4 border-white" onerror="this.src='https://via.placeholder.com/150?text=Profile'">
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-900" id="modal-title">Dr. P. Lovaraju</h2>
+                            <p class="text-brand-light font-medium text-lg mb-6">Subject Matter Expert - Aerospace Engineering</p>
+                            
+                            <div class="prose prose-blue max-w-none text-gray-600">
+                                <p class="mb-4 leading-relaxed">
+                                    Dr. P. Lovaraju obtained his Ph.D. from the esteemed <strong>Department of Aerospace Engineering, IIT Kanpur</strong> in the year 2008, and his M.E. from the Department of Aerospace Engineering, <strong>M.I.T Campus, Anna University, Chennai</strong>, in 2002.
+                                </p>
+                                
+                                <div class="grid sm:grid-cols-2 gap-6 my-6">
+                                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                        <h4 class="font-bold text-gray-900 flex items-center mb-2"><i class="fas fa-briefcase text-brand-accent mr-2"></i> Experience</h4>
+                                        <ul class="text-sm space-y-1">
+                                            <li>• 12 Years Teaching Experience</li>
+                                            <li>• 6 Years Research Experience</li>
+                                            <li>• Currently supervising 5 PhD students</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                        <h4 class="font-bold text-gray-900 flex items-center mb-2"><i class="fas fa-book text-brand-accent mr-2"></i> Publications</h4>
+                                        <p class="text-sm">Published <strong>12 research articles</strong> in reputed international journals.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <h4 class="font-bold text-gray-900 mb-2 border-b pb-2">Teaching Interests & Core Subjects</h4>
+                                    <div class="flex flex-wrap gap-2 mt-3">
+                                        <span class="px-3 py-1 bg-blue-50 text-brand-light rounded-full text-sm font-medium">Fluid Mechanics</span>
+                                        <span class="px-3 py-1 bg-blue-50 text-brand-light rounded-full text-sm font-medium">Thermodynamics</span>
+                                        <span class="px-3 py-1 bg-blue-50 text-brand-light rounded-full text-sm font-medium">Gas Dynamics</span>
+                                        <span class="px-3 py-1 bg-blue-50 text-brand-light rounded-full text-sm font-medium">Aerodynamics</span>
+                                        <span class="px-3 py-1 bg-blue-50 text-brand-light rounded-full text-sm font-medium">Flight Dynamics</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2 border-b pb-2">Academic Contributions</h4>
+                                    <p class="text-sm">Active Reviewer for:</p>
+                                    <ul class="list-disc list-inside text-sm mt-1 space-y-1">
+                                        <li>International Journal of Turbo and Jet Engines</li>
+                                        <li>Journal of Aerospace Engineering</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 sm:flex sm:flex-row-reverse">
+                            <button type="button" class="inline-flex w-full justify-center rounded-xl bg-brand-dark px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-light sm:ml-3 sm:w-auto transition-colors" onclick="closeModal()">
+                                Close Profile
+                            </button>
+                            <button type="button" class="mt-3 inline-flex w-full justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto transition-colors">
+                                View Demo Lecture
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal functionality -->
+    <script>
+        const modal = document.getElementById('profileModal');
+        const modalPanel = document.getElementById('modalPanel');
+        const body = document.body;
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            body.classList.add('modal-open');
+            
+            // Trigger reflow
+            void modalPanel.offsetWidth;
+            
+            modalPanel.classList.remove('modal-enter');
+            modalPanel.classList.add('modal-enter-active');
+            
+            setTimeout(() => {
+                modalPanel.classList.remove('modal-enter-active');
+            }, 300);
+        }
+
+        function closeModal() {
+            modalPanel.classList.add('modal-leave-active');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modalPanel.classList.remove('modal-leave-active');
+                body.classList.remove('modal-open');
+            }, 300);
+        }
+
+        // Quick Links Modal Logic
+        const qlModal = document.getElementById('quickLinkModal');
+        const qlModalPanel = document.getElementById('qlModalPanel');
+        const qlTitle = document.getElementById('ql-modal-title');
+        const qlContent = document.getElementById('ql-modal-content');
+
+        const quickLinkData = {
+            'about': {
+                title: '<i class="fas fa-info-circle text-brand-accent"></i> About Digi Adhyapak',
+                content: '<p class="text-gray-600 mb-4 text-lg leading-relaxed">Digi Adhyapak is India\'s premier digital learning platform dedicated to engineering excellence. We specialize in comprehensive GATE preparation, starting with our flagship Aerospace Engineering program.</p><p class="text-gray-600 leading-relaxed">Our mission is to democratize high-quality education by connecting ambitious students with elite academicians from top-tier institutions.</p>'
+            },
+            'aerospace': {
+                title: '<i class="fas fa-rocket text-brand-accent"></i> GATE Aerospace Program',
+                content: '<p class="text-gray-600 mb-4 text-lg">Our GATE Aerospace program is a 500+ hour comprehensive module designed to cover 100% of the syllabus.</p><ul class="list-none space-y-3 text-gray-700 font-medium mb-6"><li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Fluid Mechanics & Aerodynamics</li><li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Flight Mechanics</li><li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Space Dynamics & Propulsion</li><li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Structures</li></ul><div class="bg-amber-50 border border-amber-200 p-4 rounded-xl"><p class="text-amber-800 font-bold flex items-center"><i class="fas fa-calendar-alt mr-2"></i> Batch starts soon for 2026!</p></div>'
+            },
+            'faculty': {
+                title: '<i class="fas fa-chalkboard-teacher text-brand-accent"></i> Our Elite Faculty',
+                content: '<p class="text-gray-600 mb-4 text-lg">Learn directly from subject matter experts who have years of research and academic experience.</p><div class="bg-blue-50 border border-blue-100 p-4 rounded-xl mb-4"><p class="text-brand-dark">Our chief mentor, <strong>Dr. P. Lovaraju</strong> (Ph.D., IIT Kanpur), leads the curriculum design and delivers core modules in Aerodynamics and Fluid Mechanics.</p></div><p class="text-gray-500 text-sm italic"><i class="fas fa-arrow-up mr-1"></i> Scroll up to the Faculty section on the main page to view detailed profiles.</p>'
+            },
+            'tests': {
+                title: '<i class="fas fa-laptop-code text-brand-accent"></i> Test Series & Analytics',
+                content: '<p class="text-gray-600 mb-4 text-lg">Practice makes perfect. Elevate your prep with our comprehensive Test Series:</p><ul class="list-none space-y-3 text-gray-700 mb-6"><li class="flex items-center"><i class="fas fa-clipboard-check text-brand-light text-xl w-8"></i> 20+ Subject-wise Tests</li><li class="flex items-center"><i class="fas fa-layer-group text-brand-light text-xl w-8"></i> 10+ Mixed Subject Tests</li><li class="flex items-center"><i class="fas fa-file-alt text-brand-light text-xl w-8"></i> 15+ Full-length Mock Tests</li><li class="flex items-center"><i class="fas fa-video text-brand-light text-xl w-8"></i> PYQs with Video Solutions</li></ul><p class="text-brand-dark font-medium"><i class="fas fa-chart-pie mr-2 text-brand-accent"></i> Includes detailed AI-driven performance analytics.</p>'
+            }
+        };
+
+        function openQuickLink(key) {
+            qlTitle.innerHTML = quickLinkData[key].title;
+            qlContent.innerHTML = quickLinkData[key].content;
+            
+            qlModal.classList.remove('hidden');
+            body.classList.add('modal-open');
+            
+            // Trigger reflow
+            void qlModalPanel.offsetWidth;
+            
+            qlModalPanel.classList.remove('modal-enter');
+            qlModalPanel.classList.add('modal-enter-active');
+            
+            setTimeout(() => {
+                qlModalPanel.classList.remove('modal-enter-active');
+            }, 300);
+        }
+
+        function closeQuickLinkModal() {
+            qlModalPanel.classList.add('modal-leave-active');
+            
+            setTimeout(() => {
+                qlModal.classList.add('hidden');
+                qlModalPanel.classList.remove('modal-leave-active');
+                
+                // Only remove modal-open from body if no other modals are open
+                if (modal.classList.contains('hidden')) {
+                     body.classList.remove('modal-open');
+                }
+            }, 300);
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                if (!modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+                if (!qlModal.classList.contains('hidden')) {
+                    closeQuickLinkModal();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
