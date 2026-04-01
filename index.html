@@ -127,11 +127,11 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <button class="bg-brand-accent hover:bg-yellow-500 text-brand-dark px-8 py-3.5 rounded-full text-lg font-bold transition-all transform hover:-translate-y-1 shadow-xl flex items-center justify-center">
-                        Start Preparing Today <i class="fas fa-arrow-right ml-2"></i>
+                    <button class="bg-brand-accent/90 text-brand-dark px-8 py-3.5 rounded-full text-lg font-bold shadow-xl flex items-center justify-center cursor-wait hover:bg-brand-accent transition-colors">
+                        <i class="fas fa-satellite-dish animate-pulse mr-2"></i> Enrollment Initiating...
                     </button>
-                    <button class="bg-transparent border-2 border-white/50 hover:border-white text-white px-8 py-3.5 rounded-full text-lg font-semibold transition-all flex items-center justify-center hover:bg-white/10">
-                        <i class="fas fa-download mr-2"></i> Download Syllabus
+                    <button class="bg-transparent border-2 border-white/40 text-white/90 px-8 py-3.5 rounded-full text-lg font-semibold flex items-center justify-center cursor-wait hover:bg-white/10 transition-colors">
+                        <i class="fas fa-cogs mr-2 text-gray-300 animate-[spin_3s_linear_infinite]"></i> Syllabus Compiling [ETA: Soon]
                     </button>
                 </div>
             </div>
@@ -311,8 +311,8 @@
                 <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                     <p class="text-gray-500 text-sm">© 2026 Digi Adhyapak. All rights reserved.</p>
                     <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-500">
-                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="javascript:void(0)" onclick="openQuickLink('privacy')" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="javascript:void(0)" onclick="openQuickLink('terms')" class="hover:text-white transition-colors">Terms of Service</a>
                     </div>
                 </div>
                 
@@ -502,6 +502,14 @@
             'tests': {
                 title: '<i class="fas fa-laptop-code text-brand-accent"></i> Test Series & Analytics',
                 content: '<p class="text-gray-600 mb-4 text-lg">Practice makes perfect. Elevate your prep with our comprehensive Test Series:</p><ul class="list-none space-y-3 text-gray-700 mb-6"><li class="flex items-center"><i class="fas fa-clipboard-check text-brand-light text-xl w-8"></i> 20+ Subject-wise Tests</li><li class="flex items-center"><i class="fas fa-layer-group text-brand-light text-xl w-8"></i> 10+ Mixed Subject Tests</li><li class="flex items-center"><i class="fas fa-file-alt text-brand-light text-xl w-8"></i> 15+ Full-length Mock Tests</li><li class="flex items-center"><i class="fas fa-video text-brand-light text-xl w-8"></i> PYQs with Video Solutions</li></ul><p class="text-brand-dark font-medium"><i class="fas fa-chart-pie mr-2 text-brand-accent"></i> Includes detailed AI-driven performance analytics.</p>'
+            },
+            'privacy': {
+                title: '<i class="fas fa-user-shield text-brand-accent"></i> Privacy Policy',
+                content: '<p class="text-gray-600 mb-4 text-lg">Your data privacy is our top priority.</p><ul class="list-none space-y-3 text-gray-700 mb-6"><li class="flex items-start"><i class="fas fa-lock text-brand-light mt-1 mr-3"></i> <strong>Data Encryption:</strong> All personal telemetry and learning progress data is securely encrypted in transit and at rest.</li><li class="flex items-start"><i class="fas fa-database text-brand-light mt-1 mr-3"></i> <strong>Data Usage:</strong> We utilize your data solely to optimize your personalized learning trajectory and analytics dashboard.</li><li class="flex items-start"><i class="fas fa-share-alt-square text-brand-light mt-1 mr-3"></i> <strong>Third Parties:</strong> No unauthorized sharing of your structural or personal data with external entities.</li></ul><p class="text-sm text-gray-500 italic">Full legal documentation is currently being compiled by our compliance module.</p>'
+            },
+            'terms': {
+                title: '<i class="fas fa-file-contract text-brand-accent"></i> Terms of Service',
+                content: '<p class="text-gray-600 mb-4 text-lg">Standard operating procedures for the Digi Adhyapak platform.</p><ul class="list-none space-y-3 text-gray-700 mb-6"><li class="flex items-start"><i class="fas fa-check-circle text-brand-light mt-1 mr-3"></i> <strong>Platform Usage:</strong> Access is granted for individual preparation of GATE Aerospace examinations only.</li><li class="flex items-start"><i class="fas fa-copyright text-brand-light mt-1 mr-3"></i> <strong>Intellectual Property:</strong> All instructional modules, syllabus designs, and test telemetry are proprietary property of Digi Adhyapak.</li><li class="flex items-start"><i class="fas fa-ban text-brand-light mt-1 mr-3"></i> <strong>Fair Use:</strong> Unauthorized distribution or mirroring of platform materials will lead to immediate access termination.</li></ul><p class="text-sm text-gray-500 italic">Full terms are pending final deployment.</p>'
             }
         };
 
